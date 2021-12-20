@@ -1,0 +1,58 @@
+.tags {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &-item {
+    padding: 0 16px;
+    width: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    background: #0059ff;
+    border-radius: 12px;
+    list-style: none;
+  }
+
+  &-button {
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    line-height: 100%;
+    color: black;
+    background: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  &-input {
+    margin-top: 12px;
+    height: 48px;
+    flex: 1;
+    color: white;
+    background: transparent;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

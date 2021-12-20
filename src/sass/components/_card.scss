@@ -1,0 +1,113 @@
+.card {
+  margin-bottom: 16px;
+  padding: 24px;
+  width: 480px;
+
+  background: #121212;
+  border-radius: 12px;
+  border: 3px transparent solid;
+
+  @media only screen and (max-width: 500px) {
+    width: 300px;
+  }
+
+  &:hover {
+    border: 3px rgb(255, 125, 205) solid;
+  }
+
+  &-cta {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 500px) {
+      margin-top: 24px;
+      justify-content: space-between;
+    }
+  }
+
+  &-content {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-done {
+  border: 3px #00d26a solid;
+}
+
+.card-button {
+  margin: 0;
+  margin-left: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+  border: none;
+  border-radius: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-icon {
+    translate: 0 -1px;
+    position: absolute;
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+
+.card-input {
+  width: 100%;
+  color: #ffb742;
+  background: transparent;
+  border: none;
+}
+
+.mode-animation {
+  animation: jumping 1.25s alternate infinite ease-in-out;
+}
+
+.hover-animation {
+  &:hover {
+    animation: jumping 1.25s infinite ease-in-out;
+  }
+}
+
+@keyframes jumping {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-spin {
+  &:hover {
+    animation: spin 1.5s ease-in-out;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.card-create {
+  margin-top: 16px;
+}
